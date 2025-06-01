@@ -3,7 +3,7 @@ using namespace std;
 
 const int SIZE = 5;
 
-// Function declarations
+
 void inputTemperature(float temp[SIZE][SIZE]);
 void averagePerRow(float temp[SIZE][SIZE]);
 void detectExtreme(float temp[SIZE][SIZE]);
@@ -40,7 +40,7 @@ void averagePerRow(float temp[SIZE][SIZE]) {
         int intPart = (int)avg;
         int decPart = (int)((avg - intPart) * 10);
 
-        cout << "Row " << i + 1 << ": " << intPart << "." << decPart << "°C\n";
+        cout << "Row " << i + 1 << ": " << intPart << "." << decPart << "Â°C\n";
     }
 }
 
@@ -49,10 +49,10 @@ void detectExtreme(float temp[SIZE][SIZE]) {
     for (int i = 0; i < SIZE; ++i) {
         for (int j = 0; j < SIZE; ++j) {
             if (temp[i][j] > 45) {
-                cout << "HOT spot at (" << i + 1 << ", " << j + 1 << ") - " << temp[i][j] << "°C\n";
+                cout << "HOT spot at (" << i + 1 << ", " << j + 1 << ") - " << temp[i][j] << "Â°C\n";
             }
             else if (temp[i][j] < 0) {
-                cout << "COLD spot at (" << i + 1 << ", " << j + 1 << ") - " << temp[i][j] << "°C\n";
+                cout << "COLD spot at (" << i + 1 << ", " << j + 1 << ") - " << temp[i][j] << "Â°C\n";
             }
         }
     }

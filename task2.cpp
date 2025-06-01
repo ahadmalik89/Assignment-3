@@ -4,7 +4,7 @@ using namespace std;
 const int DAYS = 7;
 const int ITEMS = 4;
 
-// Function declarations
+
 void inputSales(float sales[DAYS][ITEMS]);
 void calculateTotals(float sales[DAYS][ITEMS], float totalPerItem[], float totalPerDay[]);
 void findMaxDay(float totalPerDay[]);
@@ -43,7 +43,7 @@ void calculateTotals(float sales[DAYS][ITEMS], float totalPerItem[], float total
         }
     }
 
-    // Display total sales
+  
     cout << "\nTotal Sales Per Item:\n";
     for (int j = 0; j < ITEMS; ++j) {
         int intPart = (int)totalPerItem[j];

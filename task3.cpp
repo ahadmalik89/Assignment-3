@@ -4,7 +4,7 @@ using namespace std;
 const int PATIENTS = 5;
 const int DAYS = 7;
 
-// Function declarations
+
 void inputStatus(char status[PATIENTS][DAYS]);
 void countEachStatus(char status[PATIENTS][DAYS]);
 void countCriticalDays(char status[PATIENTS][DAYS]);
